@@ -1,29 +1,51 @@
-body {
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
-}
-
-.container {
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  /* align-items: center; */
-  justify-content: center;
-  flex-direction: row;
-}
-
-.avatar,
-.info {
-  margin: 20px;
-}
-
 .avatar {
-  height: 50px;
-  width: 50px;
-  border: 1px solid;
+  margin-right: 20px;
+}
+.tweet {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 2px #a09b9b;
+  width: 564px;
+  min-height: 68px;
+  padding: 10px;
+  display: flex;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  position: absolute;
+  left: 25%;
+}
+
+.name {
+  font-weight: bold;
+  margin-bottom: 0.5em;
+  margin-right: 0.3em;
 }
 
 .handle {
-  display: flex;
+  color: #8899a6;
+  font-size: 13px;
+}
+
+.time {
+  padding-left: 0.3em;
+  color: #8899a6;
+}
+
+.time::before {
+  content: "\00b7";
+  padding-right: 0.3em;
+}
+
+.buttons {
+  margin-top: 10px;
+  margin-left: 2px;
+  font-size: 1.4em;
+  color: #aab9c2;
+}
+
+.buttons i {
+  width: 80px;
 }
